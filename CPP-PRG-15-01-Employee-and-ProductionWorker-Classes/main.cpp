@@ -28,8 +28,19 @@
 //  that uses a ProductionWorker object.
 
 #include <iostream>
+#include "ProductionWorker.hpp"
+#include "Employee.hpp"
 
 int main()
 {
+    ProductionWorker workerBob;
+    
+    workerBob.setPayrate(10.0);
+    workerBob.setShift(1);
+    
+    workerBob.setEmployeeName("Bob");
+    workerBob.setHireDate("01/01/1960");
+    workerBob.setEmployeeNumber(123456);
+    
     return 0;
 }
